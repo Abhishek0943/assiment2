@@ -23,7 +23,7 @@ Project structure:
 
 taskRouteService  → 4000
 deliveryService   → 4001
-logingService     → 4001
+logingService     → 4002
 comm-frontend     → 3000
 
 ------------------------------------------------------------
@@ -128,7 +128,7 @@ npm run start:comm-frontend
 Backend services:
 taskRouteService  → http://localhost:4000
 deliveryService   → http://localhost:4001
-logingService     → http://localhost:4001
+logingService     → http://localhost:4002
 
 Frontend:
 comm-frontend     → http://localhost:3000
