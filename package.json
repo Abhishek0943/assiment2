@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "install:taskRouteService": "npm --prefix ./taskRouteService install",
+    "install:deliveryService": "npm --prefix ./deliveryService install",
+    "install:logingService": "npm --prefix ./logingService install",
+    "install:comm-frontend": "npm --prefix ./comm-frontend install",
+    "start:taskRouteService": "nodemon ./taskRouteService/index.js",
+    "start:deliveryService": "nodemon ./deliveryService/index.js",
+    "start:logingService": "nodemon ./logingService/index.js",
+    "start:comm-frontend": "npm --prefix ./comm-frontend run start",
+    "install:all": "concurrently \"npm run install:taskRouteService\" \"npm run install:deliveryService\" \"npm run install:logingService\"",
+    "start:all": "concurrently \"npm run start:taskRouteService\" \"npm run start:deliveryService\" \"npm run start:logingService\"",
+    "dev": "npm run install:all && npm run start:all"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
